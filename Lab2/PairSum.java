@@ -21,7 +21,8 @@ public class PairSum {
         for (int i = 0; i < n && !found; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (numbers[i] + numbers[j] == target) {
-                    System.out.println("\n--- Pair Sum Results ---");
+                    System.out.println();
+                    System.out.println("--- Pair Sum Results ---");
                     System.out.println("Pair found at indices " + i + " and " + j);
                     System.out.println("Values: " + numbers[i] + " and " + numbers[j]);
                     System.out.println("Equation: " + numbers[i] + " + " + numbers[j] + " = " + target);
@@ -32,7 +33,8 @@ public class PairSum {
         }
 
         if (!found) {
-            System.out.println("\nNo pair found that sums to " + target + ".");
+            System.out.println();
+            System.out.println("No pair found that sums to " + target + ".");
         }
 
         scanner.close();
